@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <style>
+    .theme--dark {
+      --back: #131417;
+      --element: linear-gradient(45deg, #101010, #2c3e50);
+      --shadow: #3f5973;
+      --pils-back: rgba(255, 255, 255, 0.05);
+      --text-primary: white;
+      --text-secondary: #6b8cae;
+      --text-third: #777;
+      --text-cv: #ef5350;
+    }
+    .theme--light {
+      --back: #dfdfec;
+      --element: linear-gradient(45deg, #bfbfd9, #fff);
+      --shadow: #bfbfd9;
+      --pils-back: rgba(0, 0, 0, 0.05);
+      --text-primary: #333;
+      --text-secondary: #555;
+      --text-third: #000;
+      --text-cv: #1a53ff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: var(--back);
+      height: 750px;
+    }
+    #container {
+      border-radius: 10px;
+      /* margin-top: 150px; */
+      background: var(--element);
+    }
+    p {
+      color: var(--text-primary);
+    }
+    h6 {
+      color: var(--text-third);
+    }
+    h3 {
+      color: var(--text-primary);
+    }
+    .phoneNumber {
+      color: var(--text-secondary);
+    }
+    .email {
+      color: var(--text-cv);
+    }
+
+    .box > * {
+      margin: 5px;
+    }
+    .box {
+      margin: 4px auto;
+      width: 55%;
+      background: var(--pils-back);
+      box-shadow: inset 0 0 0 1px var(--border),
+        0 10px 30px -10px rgba(0, 0, 0, 0.12);
+      border-radius: 60px;
+      text-align: center;
+    }
+    header > i {
+        color: ;
+      border-radius: 50%;
+      padding: 5px;
+      font-size: 15px;
+    }
+    img {
+      border-radius: 50%;
+    }
+    /* header > i:hover {
+      background:  rgba(100, 100, 100, 0.3);
+      cursor: pointer;
+      transition: all .5s;
+    } */
+
+    @media (max-width: 700px) {
+      p,
+      h6 {
+        font-size: 13px;
+      }
+      h3 {
+        font-size: 18px;
+      }
+    }
+    @media (max-width: 560px) {
+      header > i {
+        font-size: 10px;
+        padding: 3px;
+      }
+      h6,
+      p {
+        font-size: 10px;
+      }
+      p {
+        margin: 4px;
+      }
+      h3 {
+        font-size: 15px;
+      }
+    }
+    @media (max-width: 470px) {
+      .box {
+        margin: 2px auto;
+      }
+      .box > * {
+        margin: 3px;
+      }
+    }
+
+    @media (max-width: 440px) {
+      header > i {
+        font-size: 8px;
+        padding: 2px;
+      }
+      h6,
+      P {
+        font-size: 8px;
+      }
+      h3 {
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width: 370px) {
+      h6,
+      p {
+        font-size: 6px;
+      }
+      h3 {
+        font-size: 10px;
+      }
+    }
+    @media (max-width: 310px) {
+      h3 {
+        font-size: 8px;
+      }
+    }
+  </style>
+  <body class="theme--dark d-flex align-items-center justify-content-center">
+    <div class="container container-dark mx-auto pb-2 w-75" id="container">
+      <header class="d-flex justify-content-end m-1 p-1">
+        <i class="bi bi-moon-fill" onclick="enableNight()"></i>
+      </header>
+      <div class="row justify-content-center align-items-center g-2">
+        <div class="col">
+          <img class="img-fluid p-3" src="my persona.jpg" alt="" />
+        </div>
+        <div class="col mx-auto">
+          <h6>Website programmer</h6>
+          <h3>Ahmed Bahaa</h3>
+          <p class="phoneNumber">+9647712386722</p>
+          <p class="email">info@b2b.com</p>
+          <p class="email">Download CV</p>
+        </div>
+        <div class="col d-flex flex-column align-items-center w-50">
+          <div class="box">
+            <p>Twitter</p>
+          </div>
+          <div class="box">
+            <p>GitHup</p>
+          </div>
+          <div class="box">
+            <p>Instagram</p>
+          </div>
+          <div class="box">
+            <p>LinkedIn</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    // let enableNight = () => {
+    //   var body = document.getElementById("body");
+    //   let container = document.getElementById("container");
+    //   if (body.classList.contains("body-color-dark")) {
+    //     body.classList.a         dd("body-color-light");
+    //   } else {
+    //   }
+    // };
+  </script>
+</html>
+<!-- 
+body
+p
+h
+continer
+phone
+email
+night
+ -->
